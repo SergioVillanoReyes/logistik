@@ -1,0 +1,113 @@
+.container-input {
+    margin: 25px 5px 0px 5px;
+    label {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid $secondary;
+        strong {
+            color: $secondary;
+        }
+        .input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: $secondary;
+            font-size: 26px;
+            &:focus { outline: none; }
+        }
+        .input-secondary {
+            width: 100%;
+            background: white;
+            border: none;
+            color: black;
+            font-size: 16px;
+            padding: 1rem 0.2rem;
+            &:focus { outline: none; } 
+        }
+        .textarea-secondary {
+            width: 100%;
+            background: white;
+            border: none;
+            color: black;
+            font-size: 16px;
+            padding: 1rem 0.2rem;
+            &:focus { outline: none; } 
+        }
+    }
+    .label-input-secondary {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin: 0.5rem;
+        strong {
+            color: black !important;
+        }
+    }
+    .label-textarea-secondary {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin: 0.5rem;
+        strong {
+            color: black !important;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.container-input {
+    margin: 25px 5px 0px 5px;
+    width: 100%;
+    label {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid $secondary;
+        strong {
+            color: $secondary;
+        }
+        .input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: $secondary;
+            font-size: 26px;
+            &:focus { outline: none; }
+        }
+        .input-secondary {
+            width: 100%;
+            background: white;
+            border: none;
+            color: black;
+            font-size: 16px;
+            padding: 1rem 0.2rem;
+            &:focus { outline: none; } 
+        }
+        .textarea-secondary {
+            width: 100%;
+            background: white;
+            border: none;
+            color: black;
+            font-size: 16px;
+            padding: 1rem 0.2rem;
+            &:focus { outline: none; } 
+        }
+    }
+    .label-input-secondary {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin: 0.5rem;
+        strong {
+            color: black !important;
+        }
+    }
+    .label-textarea-secondary {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin: 0.5rem;
+        strong {
+            color: black !important;
+        }
+    }
+}
+}

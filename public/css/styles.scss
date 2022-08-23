@@ -1,0 +1,23 @@
+@import 'variables';
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    background-color: $primary;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none
+}
+.title {
+    font-size: 70px;
+    color: white;
+    font-weight: bolder;
+}
+.text {
+    color: white;
+    font-size: 26px;
+}
+
+@import 'pages/pages';
+@import 'components/components';

@@ -1,0 +1,50 @@
+.container-map {
+    padding-top: 100vh;
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+.contact-form {
+    background-image: url('/img/texture.jpg');
+    .container-contact-form {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.container-map {
+    padding-top: 100vh;
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+.contact-form {
+    background-image: url('/img/texture.jpg');
+    .container-contact-form {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+}
+}

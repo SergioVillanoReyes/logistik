@@ -1,0 +1,69 @@
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;   
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    .hero-bg{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: rgb(51, 204, 51, 0.5);
+        z-index: 0;
+        .container-hero{
+            width: 100vw;
+            height: 100vh;
+            padding: 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .hero-title{
+                width: 100vw;
+                text-align: center;
+                font-size: 2.5rem;
+                color: white;
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;   
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    .hero-bg{
+        width: 60vw;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(6, 83, 6, 0.5);
+        z-index: 0;
+        .container-hero{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 2rem;
+            .hero-title{
+                width: 50vw;
+                text-align: left;
+                font-size: 7rem;
+                color: white;
+                font-weight:bolder;
+                .tiny {
+                    font-size: 2rem;
+                }
+                .space {
+                    margin-left: 10rem;
+                }
+            }
+        }
+    }
+}
+}
