@@ -8,12 +8,8 @@ const Contact = () => {
 
     return (
         <Layout>
-            <Hero 
-                title="CONTACT"
-                bg="bg-contact"
-            />
-            <Map />
             <ContactForm />
+            <Map />
         </Layout>
     )
 };

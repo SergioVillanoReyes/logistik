@@ -1,0 +1,111 @@
+.integrated{
+    height: auto;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100vh;
+    .box-text {
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+        p{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .points{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        font-size: 18px;
+        border-bottom: 1px solid gray;
+        .title-points{
+            background-color: $primary;
+            padding: 0.5rem 3rem;
+            height: auto;
+            max-height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                color: white;
+                text-align: center; 
+            }
+        } 
+        .title-description{
+            padding: 0.5rem 3rem;
+            text-align: center; 
+        } 
+    }
+}
+.img-bottom {
+    background-image: url('/img/bg-bottom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+@media screen and (min-width: $breakpoint-md) {
+.integrated{
+    height: auto;
+    background-color: white;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100vh;
+    .box-text {
+        padding: 1rem 3rem;
+        width: 80%;
+        margin: auto;
+        p{
+            font-size: 38px;
+            text-align: left;
+        }
+    }
+    .points{
+        padding: 1rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        font-size: 28px;
+        border: none;
+        .title-points{
+            background-color: $primary;
+            padding: 0.5rem 3rem;
+            height: auto;
+            max-height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                color: white;
+            }
+        } 
+        .title-description{
+            padding: 0.5rem 3rem;
+            text-align: left; 
+        } 
+    }
+}
+.img-bottom {
+    background-image: url('/img/bg-bottom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+}

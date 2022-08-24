@@ -61,8 +61,32 @@
                     &:hover{
                         border-bottom: 1px solid white;
                     }
+                    .dropdown {
+                        width: 100%;
+                        padding: 1rem 1rem 1rem 0rem;
+                        background: $primary-dark;
+                        animation: drop 0.5s ease;
+                        .sub-section {
+                            padding: 1rem 2rem 1rem 1rem;
+                            background: $primary-dark;
+                            transition: 0.5s ease;
+                        }
+                        .sub-section:hover {
+                            background-color: $primary;
+                        }
+                    }
                 }
             }
+
+            @keyframes drop {
+                from {
+                   opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+              }
+
             @keyframes mymove {
                 from {
                     transform: translateY(-100px);
@@ -90,6 +114,7 @@
             padding: 1rem 3rem;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             .left-panel{
@@ -127,13 +152,28 @@
                     }
                     .section{
                         padding: 0rem 1rem; 
-                        font-size: 22px;
+                        font-size: 20px;
                         text-transform: uppercase;
                         cursor: pointer;
                         border-bottom: none;
                         transition:linear 0.2s;
                         &:hover{
                             border-bottom: 1px solid white;
+                        }
+                        .dropdown {
+                            width: auto !important;
+                            padding: 1rem 0rem 1rem 0rem;
+                            position: absolute;
+                            background: $primary-dark;
+                            animation: drop 0.5s ease;
+                            .sub-section {
+                                padding: 1rem 2rem 1rem 1rem;
+                                background: $primary-dark;
+                                transition: 0.5s ease;
+                            }
+                            .sub-section:hover {
+                                background-color: $primary;
+                            }
                         }
                     }
                     .active {
@@ -148,5 +188,8 @@
                 padding: 0rem 1rem;
             }
         }
+    }
+    .bg-menu{
+        background-color: $primary-dark;
     }
 }

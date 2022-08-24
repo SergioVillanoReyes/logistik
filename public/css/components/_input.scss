@@ -3,16 +3,19 @@
     label {
         display: flex;
         flex-direction: column;
-        border-bottom: 2px solid $secondary;
+        align-items: center;
+        margin: 1rem;
+        padding: 0rem 0.5rem;
         strong {
             color: $secondary;
         }
         .input {
             width: 100%;
-            background: transparent;
+            background: rgb(235, 235, 235);
             border: none;
             color: $secondary;
             font-size: 26px;
+            padding: 1rem;
             &:focus { outline: none; }
         }
         .input-secondary {
@@ -32,6 +35,7 @@
             font-size: 16px;
             padding: 1rem 0.2rem;
             &:focus { outline: none; } 
+            resize: none;
         }
     }
     .label-input-secondary {
@@ -51,6 +55,7 @@
         strong {
             color: black !important;
         }
+        resize: none;
     }
 }
 @media screen and (min-width: $breakpoint-md) {
@@ -60,13 +65,12 @@
     label {
         display: flex;
         flex-direction: column;
-        border-bottom: 2px solid $secondary;
         strong {
             color: $secondary;
         }
         .input {
             width: 100%;
-            background: transparent;
+            background: rgb(235, 235, 235);
             border: none;
             color: $secondary;
             font-size: 26px;

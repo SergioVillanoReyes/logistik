@@ -21,4 +21,37 @@
     background-color: white;
     color: $primary;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px gray;
 }
+.btn-close {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn-close::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: $primary;
+    height: 10px;
+    margin-top: -5px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+  }
+  .btn-close::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: $primary;
+    width: 10px;
+    margin-left: -5px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+  }

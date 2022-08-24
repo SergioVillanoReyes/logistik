@@ -1,0 +1,98 @@
+.shipping{
+    height: auto;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100vh;
+    .box-text {
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+        p{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .box {
+        margin: auto;
+        width: auto;
+        border-radius: 15px;
+        min-width: 70%;
+        max-width: 15vw;
+        min-height: 300px;
+        padding: 2rem;
+        margin: 2rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        p {
+            font-size: 38px;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .container-btn {
+            display: flex;
+            width: 80%;
+            justify-content: flex-end;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.shipping{
+    height: auto;
+    background-color: white;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100vh;
+    .box-text {
+        padding: 1rem 3rem;
+        width: 80%;
+        margin: auto;
+        p{
+            font-size: 38px;
+            text-align: left;
+        }
+    }
+    .box {
+        margin: auto;
+        width: auto;
+        border-radius: 15px;
+        min-width: 40%;
+        max-width: 15vw;
+        min-height: 300px;
+        padding: 2rem;
+        margin: 2rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        p {
+            font-size: 38px;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .container-btn {
+            display: flex;
+            width: 80%;
+            justify-content: flex-end;
+        }
+    }
+}
+}

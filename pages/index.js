@@ -11,6 +11,7 @@ export default function Home() {
       <Hero 
         title="SOLUTIONS WITH FREEDOM BUILT"
         bg="bg-hero"
+        half
       />
       <AboutUs />
       <BannerServices />

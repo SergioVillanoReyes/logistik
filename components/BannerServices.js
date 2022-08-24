@@ -1,18 +1,22 @@
 import React from "react";
+import Link from "next/link";
 
 const BannerServices = () => {
     const services = [
         {
             img: '1.png',
             text: 'Integrated Distribution Services',
+            route: '/integrated-distribution-services'
         },
         {
             img: '2.png',
             text: 'Ecommerce Integrations',
+            route: '/ecommerce-integrations'
         },
         {
             img: '3.png',
             text: 'Shipping',
+            route: '/shipping'
         }
     ];
     return (
@@ -20,10 +24,14 @@ const BannerServices = () => {
         <div className="banner-services">
             <div className="container-banner-services">
                 {services.map((s, index)=> (
-                <div key={index} className="box-services">
-                    <img src={`/img/${s.img}`} alt="" />
-                    <p className="text-banner">{s.text}</p>
-                </div>
+                <Link href={s.route} key={index}>
+                    <a className="box-services">
+                    <div>
+                        <img src={`/img/${s.img}`} alt="" />
+                        <p className="text-banner">{s.text}</p>
+                    </div>
+                    </a>
+                </Link>
                 ))}
             </div>
         </div>
