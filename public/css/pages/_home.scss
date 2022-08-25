@@ -201,12 +201,12 @@
                 margin: 1rem;
                 text-align: center;
                 width: 20%;
-                height: 300px;
+                height: 200px;
                 img {
                     width: 50%;
                 }
                 .text-banner {
-                    font-size: 35px;
+                    font-size: 30px;
                     color: white;
                 }
             }
@@ -224,7 +224,7 @@
         justify-content: center;
         .text-banner-bottom {
             color: white;
-            font-size: 4vw;
+            font-size: 3.3vw;
             font-weight: bolder;
         }
     }
@@ -275,13 +275,13 @@
                 }
                 .title-tech{
                     color: $primary;
-                    font-size: 5vw;
+                    font-size: 4vw;
                     font-weight: bolder;
                     margin: 2rem;
                 }
                 .text {
                     color: black;
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                 }
                 .tech-points {
                     width: 100%;
@@ -307,7 +307,7 @@
                 justify-content: space-around;
                 .banner-points-text{
                     color: white;
-                    font-size: 3vw;
+                    font-size: 2vw;
                 }
             }
             .banner-info {
@@ -316,12 +316,12 @@
                 padding-left: 3rem;
                 .banner-info-text {
                     color: white;
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                     width: 50%;
                     margin: 2rem;
                     text-align: left;
                     .bigger {
-                        font-size: 5vw !important;
+                        font-size: 4vw !important;
                     }
                 }
                 button {

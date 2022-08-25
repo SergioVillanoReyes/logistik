@@ -73,7 +73,7 @@
             background: rgb(235, 235, 235);
             border: none;
             color: $secondary;
-            font-size: 26px;
+            font-size: 22px;
             &:focus { outline: none; }
         }
         .input-secondary {
@@ -93,6 +93,7 @@
             font-size: 16px;
             padding: 1rem 0.2rem;
             &:focus { outline: none; } 
+            resize: none;
         }
     }
     .label-input-secondary {
