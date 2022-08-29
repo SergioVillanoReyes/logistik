@@ -13,11 +13,12 @@ const Tech = () => {
                         At Logistik Solutions, we believe that warehousing and fulfilment should be easy. That's why our system takes all the complexity out of your logistic operations and puts it on us.  
                     </p>
                     <p className='text'>
-                        Our secure cloud-based system haves all the tools needed to control your operations. Allowing real time visibility by providing you with all the tools to control your operation in real-time.                     
+                        Our secure cloud-based system has all the tools needed to control your operations. Allowing real time visibility by providing you with all the tools to control your operation in real-time.                     
                     </p>
                 </div>
-                <div className='tech-info'>
-                    <img src='/img/bg-tech.png' alt='sadasd' />
+                <div className='tech-info imstech'>
+                    <div className='img-bottom' />
+                    <div className='img-up' />
                 </div>
             </div>
         </div>

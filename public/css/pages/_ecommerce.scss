@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100vh;
+    padding-top: 70vh;
     .box-text {
         padding: 1rem;
         width: 80%;
@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100vh;
+    padding-top: 70vh;
     .box-text {
         padding: 1rem 3rem;
         width: 80%;
@@ -60,17 +60,19 @@
     }
     .box-ecommerce {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
         .box-e {
-            width: 80%;
-            height: 30vh;
+            width: 66%;
+            height: 22vh;
             border: 3px solid $primary;
             align-items: center;
             border-radius: 15px;
             padding: 10%;
             p {
                 text-align: center;
+                font-size: 1.5vw;
+                color: rgb(151, 151, 151);
             }
             img{
                 width: 90%;

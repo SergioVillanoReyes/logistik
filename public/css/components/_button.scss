@@ -1,7 +1,7 @@
 .btn{
-    padding: .5rem 2rem;
+    padding: .3rem 1rem;
     border: none;
-    font-size: 22px;
+    font-size: 18px;
     font-family: $font-family;
     cursor: pointer;
     display: flex;
@@ -27,9 +27,9 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: white;
     position: relative;
     cursor: pointer;
+    box-shadow: 0px 0px 5px gray;
   }
   .btn-close::after {
     content: " ";

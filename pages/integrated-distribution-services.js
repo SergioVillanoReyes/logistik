@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
+import NavigationComponent from "../components/Navigation";
 
 const IntegratedServices = () => {
     const texts = [
@@ -59,22 +60,28 @@ const IntegratedServices = () => {
                     of the way.
                     </p>
                 </div>
-                    {texts.map((t, index) =>(
-                        <div key={index} className="points">
-                            <div className="title-points">
+                <div className="box-container">
+                    {texts.map((b, index) => (
+                        <div key={index} className="box">
+                            <div className="box-inner">
+                                <div className="box-front">
                                 <p>
-                                    {t.title}
+                                    {b.title}
                                 </p>
-                            </div>
-                            <div className="title-description">
-                                <p>
-                                    {t.description}
-                                </p>
+                                <div className="container-btn">
+                                    <div className="btn-close" />
+                                </div>
+                                </div>
+                                <div className="box-back">
+                                    {b.description}
+                                </div>
                             </div>
                         </div>
                     ))}
+                </div>
             </div>
-                <div className="img-bottom" >
+            <NavigationComponent currentSection="integrated-distribution-services" />
+                <div className="img-bottom-int" >
             <div style={{backgroundColor: 'rgba(0, 0, 0, 0.548)', width: '100%', height: '100vh'}} />
             </div>
         </Layout>

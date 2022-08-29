@@ -12,6 +12,7 @@ export default function Home() {
         title="SOLUTIONS WITH FREEDOM BUILT"
         bg="bg-hero"
         half
+        carousel
       />
       <AboutUs />
       <BannerServices />

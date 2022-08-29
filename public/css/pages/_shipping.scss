@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100vh;
+    padding-top: 70vh;
     .box-text {
         padding: 1rem;
         width: 80%;
@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100vh;
+    padding-top: 70vh;
     .box-text {
         padding: 1rem 3rem;
         width: 80%;
@@ -72,8 +72,8 @@
         min-width: 40%;
         max-width: 15vw;
         min-height: 300px;
-        padding: 2rem;
-        margin: 2rem 0rem;
+        padding: 0.3rem;
+        margin: 1rem 0rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,8 +82,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        box-shadow: 0px 0px 15px gray;
         p {
-            font-size: 30px;
+            font-size: 3vw;
             color: white;
             text-align: center;
             font-weight: bolder;

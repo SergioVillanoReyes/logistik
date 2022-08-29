@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from '../components/Layout';
 import Hero from "../components/Hero";
+import NavigationComponent from "../components/Navigation";
 
 const EcommerceInt = () => {
     const ecomm = [
@@ -33,7 +34,7 @@ const EcommerceInt = () => {
     return (
         <Layout>
             <Hero 
-                title="Ecommerce Integrations"
+                title="ECOMMERCE INTEGRATIONS"
             />
             <div className="ecommerce-int">
             <div className="box-text">
@@ -51,6 +52,7 @@ const EcommerceInt = () => {
                     </div>
                 </div>
             </div>
+            <NavigationComponent currentSection="ecommerce-integrations" />
         </Layout>
     );
 };

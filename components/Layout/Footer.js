@@ -3,11 +3,13 @@ import Link from 'next/link';
 import Input from '../Form/Input';
 import Button from '../Button';
 import Textarea from '../Form/Textarea';
+import Contact from '../Contact';
 
 const Footer = () => {
 
     return (
         <div className='footer'>
+            <Contact />
             <div className='container-footer'>
                 <div className='section-footer'>
                     <div>
@@ -45,15 +47,15 @@ const Footer = () => {
                             </p>
                         </div>
                 </div>
-                <div className='section-footer-form'>
+                {/* <div className='section-footer-form'>
                     <form>
                         <div className='row'>
                             <Input className="input-secondary" placeholder="First Name" />
                             <Input className="input-secondary" placeholder="Last Name" />
                         </div>
                         <div className='row'>
-                            <Input className="input-secondary" placeholder="First Name" />
-                            <Input className="input-secondary" placeholder="Last Name" />
+                            <Input className="input-secondary" placeholder="Email Address" />
+                            <Input className="input-secondary" placeholder="Phone Number" />
                         </div>
                         <div className='row'>
                             <Textarea className="textarea-secondary" placeholder="Message"/>
@@ -62,7 +64,7 @@ const Footer = () => {
                             <Button typeOfBtn="secondary" type="submit" text="SUBMIT" />
                         </div>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     );

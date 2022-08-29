@@ -1,5 +1,5 @@
 .footer {
-    background-color: $primary;
+    background-color: $primary-dark;
     .container-footer {
         width: 90vw;
         margin: auto;
@@ -24,7 +24,7 @@
             }
             .text {
                 font-weight: 200;
-                font-size: 22px;
+                font-size: 18px;
                 color: white;
             }
         }
@@ -60,15 +60,15 @@
     .footer{
         .container-footer{
             display: flex;
-            padding: 1rem;
+            padding: 0rem;
             .section-footer{
                 text-align: left;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 1rem;
                 img{
-                    width: 100%;
-                    margin-top: 2rem;
+                    width: 56%;
+                    margin-top: 0rem;
                 }
                 .social-media{
                     justify-content: flex-start;
@@ -81,7 +81,8 @@
                     margin: 0.5rem 0rem;
                 }
                 .sub-title{
-                    color: white;
+                    color: rgb(192, 192, 192);
+                    font-weight: bolder;
                 }
             }
             .section-footer-form {

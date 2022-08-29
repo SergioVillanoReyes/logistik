@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Hero from '../components/Hero';
+import NavigationComponent from "../components/Navigation";
 
 const Shipping = () => {
     const boxes = [
@@ -41,12 +42,10 @@ const Shipping = () => {
                         <p>
                             {b.title}
                         </p>
-                        <div className="container-btn">
-                            <div className="btn-close" />
-                        </div>
                     </div>
                 ))}
             </div>
+            <NavigationComponent currentSection="shipping"/>
         </Layout>
     );
 };

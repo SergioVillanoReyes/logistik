@@ -171,6 +171,8 @@
     }
     .about-us{
         width: 100vw;
+        background-image: url('/img/texture.jpg');
+        background-attachment: fixed;
         .container-about-us{
             padding: 3rem;
             display: flex;
@@ -178,13 +180,21 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            .title{
+                margin: 0;
+            }
             .text-cont {
-                text-align: left;
+                text-align: center;
+                width: 60%;
             }
         }
     }
     .banner-services{
-        padding: 2rem;
+        padding: 0rem;
+        background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 10px 10px;
+background-image: repeating-linear-gradient(45deg, $primary 0, $primary-dark 1px, $primary 0, $primary-dark 30%);
         .container-banner-services {
             display: flex;
             flex-direction: row;
@@ -192,7 +202,7 @@
             justify-content: center;
             padding: 2rem;
             .box-services {
-                padding-bottom: 5rem;
+                padding-bottom: 2rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -201,21 +211,37 @@
                 margin: 1rem;
                 text-align: center;
                 width: 20%;
-                height: 200px;
+                height: 130px;
+                transition: 0.1s linear;
                 img {
-                    width: 50%;
+                    width: 30%;
+                    transition: 0.1s linear;
                 }
                 .text-banner {
-                    font-size: 30px;
+                    font-size: 25px;
                     color: white;
+                    margin: 0;
+                    transition: 0.1s linear;
                 }
+            }
+        }
+        .box-services:hover {
+            border-bottom: 3px solid rgb(211, 211, 211);
+            img{
+                width: 25%;
+            }
+            .text-banner {
+                font-size: 25px;
+                color: rgb(211, 211, 211);
+                margin: 0;
             }
         }
     }
     .banner-bottom {
-        padding: 2rem;
+        padding: 2rem 5rem;
         height: 300px;
         background-image: url('/img/banner-bottom.jpg');
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -226,6 +252,7 @@
             color: white;
             font-size: 3.3vw;
             font-weight: bolder;
+            width: 55%;
         }
     }
     .icons-services {
@@ -269,15 +296,15 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                text-align: left;
-                img {
-                    width: 100%;
-                }
+                text-align: justify;
+                // img {
+                //     width: 100%;
+                // }
                 .title-tech{
                     color: $primary;
                     font-size: 4vw;
                     font-weight: bolder;
-                    margin: 2rem;
+                    margin: 0rem;
                 }
                 .text {
                     color: black;
@@ -291,11 +318,54 @@
                     justify-content: space-between;
                 }
             }
+            .imstech{
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 2rem;
+                .img-bottom{
+                    width: 350px;
+                    height: 250px;
+                    background-image: url('/img/imb-bottom.jpg');
+                    background-size: cover;
+                    border: 15px solid white;
+                    box-shadow: 0px 0px 5px gray;
+                    margin-top: -100px;
+                    cursor: pointer;
+                    z-index: 1;
+                    transition: 0.1s ease;
+                }
+                .img-bottom:hover{
+                    margin-top: -180px;
+                    width: 370px;
+                    height: 270px;
+                    box-shadow: 0px 0px 15px gray;
+                }
+                .img-up{
+                    width: 300px;
+                    height: 350px;
+                    background-image: url('/img/img-up.jpg');
+                    background-size: cover;
+                    border: 15px solid white;
+                    box-shadow: 0px 0px 5px gray;
+                    margin-left: 150px;
+                    cursor: pointer;
+                    z-index: 0;
+                    transition: 0.1s ease;
+                }
+                .img-up:hover{
+                    z-index: 1;
+                    margin-left: 120px;
+                    width: 320px;
+                    height: 370px;
+                    box-shadow: 0px 0px 15px gray;
+                }
+            }
         }
     }
     .banner-bottom-section {
         background-image: url('/img/bg-banner-bottom.jpg');
         background-position: center;
+        background-attachment: fixed;
         .container-banner-bottom {
             background-color: rgba(3, 54, 33, 0.575);
             .banner-points {
@@ -308,6 +378,8 @@
                 .banner-points-text{
                     color: white;
                     font-size: 2vw;
+                    text-transform: uppercase;
+                    font-weight: bolder;
                 }
             }
             .banner-info {
