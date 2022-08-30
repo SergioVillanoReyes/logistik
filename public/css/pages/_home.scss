@@ -359,7 +359,7 @@ background-image: repeating-linear-gradient(45deg, $primary 0, $primary-dark 1px
         background-color: white;
         padding: 2rem 0rem;
         .container-tech {
-            width: 80%;
+            width: 70%;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -375,13 +375,13 @@ background-image: repeating-linear-gradient(45deg, $primary 0, $primary-dark 1px
                 // }
                 .title-tech{
                     color: $primary;
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     font-weight: bolder;
                     margin: 0rem;
                 }
                 .text {
                     color: black;
-                    font-size: 1.8vw;
+                    font-size: 1.6vw;
                 }
                 .tech-points {
                     width: 100%;
