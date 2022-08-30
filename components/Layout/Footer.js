@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='container-footer'>
                 <div className='section-footer'>
                     <div>
-                        <img src='/img/logo.png' alt='' className='' />
+                        <img src='/img/logo.png' alt='' className='logo-footer' />
                         <div className='social-media'>
                             <Link href="">
                                 <a>
@@ -36,35 +36,19 @@ const Footer = () => {
                             <p className='sub-title'>
                                 CONTACT US
                             </p>
-                            <p className='text'>
-                            5530 BANDINI BLVD.
-                            </p>
-                            <p className='text'>
-                            BELL GARDENS, CA 90201 
-                            </p>
-                            <p className='text'>
-                            <strong>323.916.4096 </strong>
-                            </p>
+                            <div className='contact-info'>
+                                <p className='text'>
+                                5530 BANDINI BLVD.
+                                </p>
+                                <p className='text'>
+                                BELL GARDENS, CA 90201 
+                                </p>
+                                <p className='text'>
+                                <strong>323.916.4096 </strong>
+                                </p>
+                            </div>
                         </div>
                 </div>
-                {/* <div className='section-footer-form'>
-                    <form>
-                        <div className='row'>
-                            <Input className="input-secondary" placeholder="First Name" />
-                            <Input className="input-secondary" placeholder="Last Name" />
-                        </div>
-                        <div className='row'>
-                            <Input className="input-secondary" placeholder="Email Address" />
-                            <Input className="input-secondary" placeholder="Phone Number" />
-                        </div>
-                        <div className='row'>
-                            <Textarea className="textarea-secondary" placeholder="Message"/>
-                        </div>
-                        <div className='row-right'>
-                            <Button typeOfBtn="secondary" type="submit" text="SUBMIT" />
-                        </div>
-                    </form>
-                </div> */}
             </div>
         </div>
     );

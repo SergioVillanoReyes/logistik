@@ -33,7 +33,7 @@
                 text-align: center;
             }
             img{
-                width: 90%;
+                width: 55%;
                 margin: auto;
             }
         }
@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 70vh;
+    padding-top: 75vh;
     .box-text {
         padding: 1rem 3rem;
         width: 80%;
@@ -68,14 +68,14 @@
             border: 3px solid $primary;
             align-items: center;
             border-radius: 15px;
-            padding: 10%;
+            padding: 5%;
             p {
                 text-align: center;
                 font-size: 1.5vw;
-                color: rgb(151, 151, 151);
+                color: black;
             }
             img{
-                width: 90%;
+                width: 60%;
                 margin: auto;
             }
         }

@@ -33,8 +33,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background: black;
+        background: #1A191D;
         .column{
+            width: 50%;
             .super-title{
                 font-size: 4rem;
                 font-weight: bolder;
@@ -47,7 +48,7 @@
             }
         }
         .map{
-            width: 750px;
+            width: 50%;
             iframe{
                 width: 100%;
             }

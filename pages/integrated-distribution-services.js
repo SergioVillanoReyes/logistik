@@ -81,9 +81,6 @@ const IntegratedServices = () => {
                 </div>
             </div>
             <NavigationComponent currentSection="integrated-distribution-services" />
-                <div className="img-bottom-int" >
-            <div style={{backgroundColor: 'rgba(0, 0, 0, 0.548)', width: '100%', height: '100vh'}} />
-            </div>
         </Layout>
     );
 };

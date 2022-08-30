@@ -1,5 +1,5 @@
 .footer {
-    background-color: $primary-dark;
+    background-color: black;
     .container-footer {
         width: 90vw;
         margin: auto;
@@ -67,22 +67,32 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 1rem;
                 img{
-                    width: 56%;
+                    width: 100%;
                     margin-top: 0rem;
                 }
+                .logo-footer{
+                    width: 200px;
+                }
                 .social-media{
+                    width: 200px;
                     justify-content: flex-start;
                 }
             }
             .section-footer-right {
                 display: flex;
                 flex-direction: column;
+                width: 60vw;
                 p {
                     margin: 0.5rem 0rem;
                 }
                 .sub-title{
                     color: rgb(192, 192, 192);
                     font-weight: bolder;
+                }
+                .contact-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
             .section-footer-form {
