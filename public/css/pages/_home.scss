@@ -477,7 +477,7 @@ background-image: repeating-linear-gradient(45deg, $primary 0, $primary-dark 1px
                 position: relative;
                 width: 100%;
                 color: white;
-                font-size: 2vw;
+                font-size: 1.5vw;
                 text-transform: uppercase;
                 font-weight: bolder;
               }
@@ -529,7 +529,7 @@ background-image: repeating-linear-gradient(45deg, $primary 0, $primary-dark 1px
             .banner-info {
                 padding-top: 2rem;
                 padding-bottom: 5rem;
-                padding-left: 3rem;
+                padding-right: 3rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;

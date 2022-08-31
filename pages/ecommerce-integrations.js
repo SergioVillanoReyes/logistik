@@ -38,10 +38,10 @@ const EcommerceInt = () => {
             />
             <div className="ecommerce-int">
             <div className="box-text">
-                    <p>
+                    <p className="bt">
                    We work and integrate with the most popular ecommerce platforms.
                     </p>
-                    <p className="bold">Ecommerce &amp; Fullfilment</p>
+                    <p className="bold bt">Ecommerce &amp; Fullfilment</p>
                     <div className="box-ecommerce">
                         {ecomm.map((e, index) => (
                         <div  key={index} className="box-e">

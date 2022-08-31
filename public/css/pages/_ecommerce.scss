@@ -11,6 +11,9 @@
         padding: 1rem;
         width: 80%;
         margin: auto;
+        .bt {
+            padding: 1rem 3rem;
+        }
         p{
             font-size: 15px;
             text-align: center;
@@ -62,6 +65,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
+        justify-items: center;
         .box-e {
             width: 66%;
             height: auto;
