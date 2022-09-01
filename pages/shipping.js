@@ -6,7 +6,7 @@ import NavigationComponent from "../components/Navigation";
 const Shipping = () => {
     const boxes = [
         {
-            title: 'Real Time Shipping Rates',
+            title: 'Real time shipping rates',
             bg: '/img/box-uno.jpg',
         },
         {
@@ -30,7 +30,7 @@ const Shipping = () => {
                     <p>
                     We know that shipping isn't just about
                     moving products it's about managing risk and
-                    maximizing efficiency.With Logistik you'll get
+                    maximizing efficiency.<br />With Logistik you'll get
                     fast, reliable service at competitive proces so
                     you can focus on what really matters: growing 
                     your business!

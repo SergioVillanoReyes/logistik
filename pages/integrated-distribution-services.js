@@ -54,8 +54,8 @@ const IntegratedServices = () => {
                     <p>
                     From a single warehouse to a global supply chain, we
                     have the expertice and experience to handle your
-                    distribution needs.We make sure that we inderstand
-                    your business goals and that we provice real-time
+                    distribution needs.<br/>We make sure that we inderstand
+                    your business goals and that we provide real-time
                     solutions, so you can track your inventory every step
                     of the way.
                     </p>

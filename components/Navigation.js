@@ -9,7 +9,6 @@ const NavigationComponent = ({currentSection}) => {
     ];
     return(
         <div className="navigation">
-            <p className="title">OUR SERVICES</p>
             {navig.map((n, index) => (
                     n !== currentSection && (
                         <Link href={`/${n}`}>

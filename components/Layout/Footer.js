@@ -9,7 +9,6 @@ const Footer = () => {
 
     return (
         <div className='footer'>
-            <Contact />
             <div className='container-footer'>
                 <div className='section-footer'>
                     <div>
@@ -34,7 +33,7 @@ const Footer = () => {
                     </div>
                         <div className='section-footer-right'>
                             <p className='sub-title'>
-                                CONTACT US
+                            Get in touch
                             </p>
                             <div className='contact-info'>
                                 <p className='text'>

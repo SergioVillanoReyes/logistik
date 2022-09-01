@@ -4,7 +4,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1rem;
+        margin: 0.8rem;
         padding: 0rem 0.5rem;
         strong {
             color: $secondary;
@@ -60,7 +60,7 @@
 }
 @media screen and (min-width: $breakpoint-md) {
 .container-input {
-    margin: 25px 5px 0px 5px;
+    margin: 0px;
     width: 100%;
     label {
         display: flex;
@@ -75,6 +75,7 @@
             color: $secondary;
             font-size: 22px;
             &:focus { outline: none; }
+            font-family: $font-family;
         }
         .input-secondary {
             width: 100%;

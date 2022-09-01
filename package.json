@@ -16,6 +16,7 @@
     "react-back-to-top-button": "^0.0.14",
     "react-dom": "18.2.0",
     "react-scrolltop-button": "^0.1.9",
+    "react-slideshow-image": "^4.0.4",
     "sass": "^1.53.0"
   },
   "devDependencies": {

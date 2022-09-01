@@ -2,7 +2,8 @@
     width: 100%;
     height: auto;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
+    background-color: $primary;
     .container-menu{
         padding: 1rem;
         display: flex;
@@ -110,11 +111,11 @@
         }
     }
 }
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: 1325px) {
     .menu {
         width: 100%;
         height: auto;
-        z-index: 2;
+        z-index: 4;
         .container-menu{
             padding: 1rem 3rem;
             display: flex;
@@ -200,7 +201,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                padding: 0rem 1rem;
+                padding: 0rem;
             }
         }
     }
@@ -210,9 +211,8 @@
         transition: 0.2s ease-in;
     }
     .menu-down{
-        background-color: black;
+        background-color: $primary-dark;
         position: fixed;
-        border-bottom: 4px solid white;
         transition: 0.2s ease-in;
     }
     .bg-menu{

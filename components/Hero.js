@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 const Hero = ({
     title,
@@ -17,32 +19,58 @@ const Hero = ({
         'bg-shipping'
     ];
 
-    useEffect(()=> {
-        setNum(num +1);
-        if(num === 3){
-            setNum(0);
-        }
-        setCurrentImg(img[num]);
-    },[refresh]);
-
-    setTimeout(() => {
-        setRefresh(!refresh);
-    }, 6000);
-
 
 return (
-<div 
-    className={`hero ${half ? 'half' : 'complete'} ${refresh ? 'anim1' : 'anim2'}`} 
-    style={{ backgroundImage: carousel ? `url('/img/carousel/${currentImg}.jpg')` : `url('/img/${bg}.jpg')` }}
->
-    <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}>
-        <div className={`container-hero ${half ? 'hero-bg-half' : 'hero-bg-compl'}`}>
-            <div className='hero-title'>
-            {title}
+    <>
+    <div className="space-texts">
+            {title !== 'SOLUTIONS WITH FREEDOM BUILT IN' ? (
+                    <div className='hero-title'>
+                            {title}
+                    </div>
+            ):(
+                 <>
+                        <p  style={{marginTop: '30vh'}}>
+                                SOLUTIONS 
+                                <span className="center-flex">
+                                <small>WITH</small>
+                                <span className="column">
+                                <span className="freedom">FREEDOM</span>
+                                <span className="built"> BUILT IN</span>
+                                </span>
+                                </span>
+                        </p>
+                </>
+            )}
+    </div>
+    {carousel ? (
+    <Slide responsive cssClass={`hero ${half ? 'half' : 'complete'} ${refresh ? 'anim1' : 'anim2'}`} arrows={false} duration={4500}>
+        {img.map((i, index) => (
+        <div 
+            key={index}
+            className="contain-slider"
+            style={{ backgroundImage: carousel ? `url('/img/carousel/${i}.jpg')` : `url('/img/${bg}.jpg')` }}
+        >
+            <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}>
+                <div className={`container-hero ${half ? 'hero-bg-half' : 'hero-bg-compl'}`} >
+                </div>
+            </div>
+        </div>
+        ))}
+    </Slide>
+    ):(
+        <div className={`hero ${half ? 'half' : 'complete'} ${refresh ? 'anim1' : 'anim2'}`}>
+        <div 
+            className="contain-slider"
+            style={{ backgroundImage: carousel ? `` : `url('/img/${bg}.jpg')` }}
+        >
+            <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}>
+                <div className={`container-hero ${half ? 'hero-bg-half' : 'hero-bg-compl'}`} >
+                </div>
             </div>
         </div>
     </div>
-</div>
+    )}
+    </>
     );
 };
 

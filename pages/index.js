@@ -4,12 +4,13 @@ import AboutUs from "../components/AboutUs";
 import Tech from "../components/Technologies";
 import BannerServices from "../components/BannerServices";
 import BannerBottom from "../components/BannerBottom";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <Layout>
       <Hero 
-        title="SOLUTIONS WITH FREEDOM BUILT"
+        title="SOLUTIONS WITH FREEDOM BUILT IN"
         bg="bg-hero"
         half
         carousel
@@ -18,6 +19,7 @@ export default function Home() {
       <BannerServices />
       <Tech />
       <BannerBottom />
+      <Contact />
     </Layout>
   )
 }
