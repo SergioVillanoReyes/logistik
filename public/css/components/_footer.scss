@@ -1,5 +1,5 @@
 .footer {
-    background-color: $primary-dark;
+    background-color: $primary;
     .container-footer {
         width: 90vw;
         margin: auto;
@@ -82,7 +82,7 @@
             }
             .section-footer-right {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 width: 60vw;
                 p {
                     margin: 0.5rem 0rem;
@@ -95,6 +95,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    flex-direction: column;
                 }
             }
             .section-footer-form {

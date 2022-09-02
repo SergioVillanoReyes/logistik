@@ -19,6 +19,7 @@
         justify-content: center;
     }
 }
+
 .hero{
     width: 100vw;
     background-position: center;   
@@ -123,6 +124,7 @@
             align-items: flex-start;
             .center-flex{
                 display: flex;
+                margin-top: -5vh;
                 small{
                     font-size: 3vw;
                     margin-top: 2.3vh;
@@ -137,6 +139,7 @@
                     }
                     .built{
                         font-size: 9vw;
+                        margin-top: -6vh;
                     }
                 }
             }
@@ -235,8 +238,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-        background-color: rgba(21, 86, 59, 0.2);
-    background-blend-mode: multiply;
 }
 .complete {
     width: 100vw;

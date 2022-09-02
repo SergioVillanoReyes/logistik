@@ -50,7 +50,8 @@ return (
             className="contain-slider"
             style={{ backgroundImage: carousel ? `url('/img/carousel/${i}.jpg')` : `url('/img/${bg}.jpg')` }}
         >
-            <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}>
+            {/* <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}> */}
+            <div>
                 <div className={`container-hero ${half ? 'hero-bg-half' : 'hero-bg-compl'}`} >
                 </div>
             </div>
