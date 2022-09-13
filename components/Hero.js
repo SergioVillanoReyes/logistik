@@ -13,10 +13,10 @@ const Hero = ({
     const [num , setNum] = useState(0);
 
     const img = [
-        'bg-hero',
-        'bg-integrated',
-        'bg-services',
-        'bg-shipping'
+        'bg-hero.jpg',
+        'home.png',
+        'home2.png',
+        'bg-shipping.jpg'
     ];
 
 
@@ -48,7 +48,7 @@ return (
         <div 
             key={index}
             className="contain-slider"
-            style={{ backgroundImage: carousel ? `url('/img/carousel/${i}.jpg')` : `url('/img/${bg}.jpg')` }}
+            style={{ backgroundImage: carousel ? `url('/img/carousel/${i}')` : `url('/img/${bg}.jpg')` }}
         >
             {/* <div className={`hero-bg ${half ? 'half-bg' : 'complete-bg'}`}> */}
             <div>

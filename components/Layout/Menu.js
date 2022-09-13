@@ -114,7 +114,7 @@ useEffect(() => {
               </div>
               </div>
               <div className='button-right'>
-                <Link href="https://global.secure-wms.com/WebUI/Login">
+                <Link href="https://global.secure-wms.com/webui/login?callbackUri=https://global.secure-wms.com/smartui/?page=findorders&tplguid=%7Be4e23011-2e8b-40fa-a91e-33fd7ff05c00%7D">
                   <a target="_blank">
                     <Button 
                       typeOfBtn={`${scrollDir === 'menu-up' ? 'primary' : 'secondary'}`}

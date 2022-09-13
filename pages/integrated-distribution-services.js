@@ -68,9 +68,9 @@ const IntegratedServices = () => {
                                 <p>
                                     {b.title}
                                 </p>
-                                <div className="container-btn">
+                                {/* <div className="container-btn">
                                     <div className="btn-close" />
-                                </div>
+                                </div> */}
                                 </div>
                                 <div className="box-back">
                                     {b.description}
@@ -80,7 +80,7 @@ const IntegratedServices = () => {
                     ))}
                 </div>
             </div>
-            <NavigationComponent currentSection="integrated-distribution-services" />
+            <NavigationComponent bg="bg-bottom.png" currentSection="integrated-distribution-services" />
         </Layout>
     );
 };

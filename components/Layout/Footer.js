@@ -38,7 +38,7 @@ const Footer = () => {
                             </p>
                                 <p className='text'>
                                 +1.323.916.4096<br/>
-                                contact@logistik.com
+                                contact@logistik-solutions.com 
                                 </p>
                             </div>
                             <div className='contact-info'>

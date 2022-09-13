@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 5rem 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/img/bg-bottom.jpg');
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/img/bg-bottom.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,10 +43,11 @@
     align-items:flex-end;
     justify-content: space-around;
     padding: 5rem 3rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/img/bg-bottom.jpg');
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/img/bg-bottom.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     .nav{
         width:25%;
         height: auto;

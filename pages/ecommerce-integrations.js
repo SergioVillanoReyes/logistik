@@ -35,6 +35,7 @@ const EcommerceInt = () => {
         <Layout>
             <Hero 
                 title="ECOMMERCE INTEGRATIONS"
+                bg="eccomerce"
             />
             <div className="ecommerce-int">
             <div className="box-text">
@@ -52,7 +53,7 @@ const EcommerceInt = () => {
                     </div>
                 </div>
             </div>
-            <NavigationComponent currentSection="ecommerce-integrations" />
+            <NavigationComponent bg="bg-ecc.png" currentSection="ecommerce-integrations" />
         </Layout>
     );
 };

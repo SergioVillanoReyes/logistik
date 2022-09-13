@@ -45,7 +45,7 @@ const Shipping = () => {
                     </div>
                 ))}
             </div>
-            <NavigationComponent currentSection="shipping"/>
+            <NavigationComponent bg="bg-shipp.png" currentSection="shipping"/>
         </Layout>
     );
 };
