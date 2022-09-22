@@ -33,27 +33,30 @@ const EcommerceInt = () => {
 
     return (
         <Layout>
-            <Hero 
-                title="ECOMMERCE INTEGRATIONS"
-                bg="eccomerce"
-            />
-            <div className="ecommerce-int">
-            <div className="box-text">
-                    <p className="bt">
-                   We work and integrate with the most popular ecommerce platforms.
-                    </p>
-                    <p className="bold bt">Ecommerce &amp; Fullfilment</p>
-                    <div className="box-ecommerce">
+            <div className="integrated">
+                <p>
+                    ecommerce integrations
+                </p>
+            </div>
+                <div className="ecommerce-int">
+                    <div className="ecomm-texts">
+                        <p className="ecomm-text">
+                            We work and integrate with the <br />most popular ecommerce platforms
+                        </p>
+                        <p className="ecomm-title">
+                            Ecommerce & Fulfillment
+                        </p>
+                    </div>
+                    <div className="ecomm-circles">
                         {ecomm.map((e, index) => (
-                        <div  key={index} className="box-e">
-                            <img src={e.img} alt="logistik" />
-                            <p>{e.title}</p>
-                        </div>
+                            <div key={index}  className="circle">
+                                <div className="circle-img" style={{backgroundImage:`url(${e.img})`}} />
+                                <p className="circle-text">{e.title}</p>
+                            </div>
                         ))}
                     </div>
                 </div>
-            </div>
-            <NavigationComponent bg="bg-ecc.png" currentSection="ecommerce-integrations" />
+            {/* <NavigationComponent bg="bg-ecc.png" currentSection="ecommerce-integrations" /> */}
         </Layout>
     );
 };

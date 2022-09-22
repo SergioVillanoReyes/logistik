@@ -1,99 +1,77 @@
 .shipping{
-    height: auto;
-    background-color: white;
-    padding: 1rem;
+    padding: 65vh 1rem 3rem 1rem;
     display: flex;
+    background-color: white;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70vh;
-    .box-text {
-        padding: 1rem;
-        width: 80%;
-        margin: auto;
-        p{
-            font-size: 25px;
-            text-align: center;
-        }
-    }
-    .box {
-        margin: auto;
-        width: auto;
-        border-radius: 15px;
-        min-width: 70%;
-        max-width: 15vw;
-        min-height: 300px;
-        padding: 2rem;
-        margin: 2rem 0rem;
+    .box{
         display: flex;
-        align-items: center;
         justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        p {
-            font-size: 38px;
-            color: white;
-            text-align: center;
-            font-weight: bolder;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+        .img{
+            animation: fadeBottomO 1s ease;
+            width: 100%;
+            height: 45vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: 0.5s ease all;
         }
-        .container-btn {
-            display: flex;
-            width: 80%;
-            justify-content: flex-end;
+        .img:hover{
+            background-attachment: initial;
+            background-size: 100%;
+        }
+        p{
+            width: 100%;
+            margin: 1rem 0rem;
+            font-size: 7.2vw;
+            color: $primary;
+            transition: 0.5 ease all;
+            text-align: center;
+        }
+        p:hover{
+            font-weight: bolder;
         }
     }
 }
 @media screen and (min-width: $breakpoint-md) {
 .shipping{
-    height: auto;
-    background-color: white;
-    padding: 1rem 3rem;
+    padding: 65vh 3rem 3rem 3rem;
     display: flex;
+    background-color: white;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80vh;
-    .box-text {
-        padding: 1rem 3rem;
-        width: 80%;
-        margin: auto;
+    .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        .img{
+            animation: fadeBottomO 1s ease;
+            width: 53vw;
+            height: 45vh;
+            background-size: 100%;
+            background-attachment:initial;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: 0.5s ease all;
+            cursor: pointer;
+        }
+        .img:hover{
+            transition: 0.5s ease all;
+            background-attachment: initial;
+            background-size: 120%;
+        }
         p{
-            font-size: 23px;
+            width: 40%;
+            font-size: 3.2vw;
+            color: $primary;
+            transition: 0.5 ease all;
             text-align: left;
         }
-    }
-    .box {
-        margin: auto;
-        width: auto;
-        border-radius: 15px;
-        min-width: 35%;
-        max-width: 15vw;
-        min-height: 230px;
-        padding: 0.3rem;
-        margin: 1rem 0rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0px 0px 15px gray;
-        p {
-            font-size: 2vw;
-            color: white;
-            text-align: center;
+        p:hover{
             font-weight: bolder;
-            margin: 1rem;
-        }
-        .container-btn {
-            display: flex;
-            width: 80%;
-            justify-content: flex-end;
         }
     }
 }

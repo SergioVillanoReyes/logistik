@@ -1,0 +1,221 @@
+.menu {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    background-color: $primary;
+    .container-menu{
+        padding: 1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .left-panel{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100vw;
+            .logo{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            .logo-min{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            .hamburger-menu{
+                width: 50px;
+                height: 55px;
+                margin: 0px 10px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .show{
+                display: flex !important;
+            }
+            .hide{
+                display: none !important;
+            }
+            .sections{
+                position: absolute;
+                width: 100vw;
+                height: auto;
+                margin-top: 3.5rem;
+                background-color: $primary-dark;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: center;
+                padding: 0rem 3rem;
+                display: none;
+                animation: mymove 0.2s ease;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                .section{
+                    padding: 2rem 1rem; 
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    border-bottom: none;
+                    transition: 0.5s linear 0.2s;
+                    &:hover{
+                        border-bottom: 1px solid white;
+                    }
+                    .dropdown {
+                        width: 100%;
+                        padding: 1rem 1rem 1rem 0rem;
+                        background: $primary-dark;
+                        animation: drop 0.5s ease;
+                        .sub-section {
+                            padding: 1rem 2rem 1rem 1rem;
+                            background: $primary-dark;
+                            transition: 0.5s ease;
+                        }
+                        .sub-section:hover {
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+
+            @keyframes drop {
+                from {
+                   opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+              }
+
+            @keyframes mymove {
+                from {
+                    transform: translateY(-100px);
+                }
+                to {
+                    transform: translateY(0px);
+                }
+              }
+        }
+        .button-right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0rem 1rem;
+        }
+    }
+}
+@media screen and (min-width: 1325px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        z-index: 4;
+        .container-menu{
+            padding: 1rem 3rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .left-panel{
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                .logo{
+                    width: 250px;
+                    transition: 0.2s ease-in;
+                    img{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                .logo-min{
+                    width: 100px;
+                    transition: 0.2s ease-in;
+                    img{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                .hamburger-menu{
+                    display: none;
+                }
+                .show{
+                    display: flex !important;
+                }
+                .hide{
+                    display: flex !important;
+                }
+                .sections{
+                    position: inherit;
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;
+                    margin-top: 0;
+                    background: inherit;
+                    color: white;
+                    align-items: center;
+                    padding: 0rem 3rem;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .section{
+                        padding: 0rem 1rem; 
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border-bottom: none;
+                        transition:none;
+                        &:hover{
+                            border-bottom: 1px solid white;
+                        }
+                        .dropdown {
+                            width: auto !important;
+                            padding: 1rem 0rem 1rem 0rem;
+                            position: absolute;
+                            background: black;
+                            animation: drop 0.5s ease;
+                            .sub-section {
+                                padding: 1rem 2rem 1rem 1rem;
+                                background: black;
+                                transition: none;
+                            }
+                            .sub-section:hover {
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                    .active {
+                        border-bottom: 3px solid white;
+                    }
+                }
+            }
+            .button-right{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0rem;
+            }
+        }
+    }
+    .menu-up{
+        background: none;
+        position: absolute;
+        transition: 0.2s ease-in;
+    }
+    .menu-down{
+        background-color: $primary-dark;
+        position: fixed;
+        transition: 0.2s ease-in;
+    }
+    .bg-menu{
+        background-color: $primary-dark;
+    }
+}
