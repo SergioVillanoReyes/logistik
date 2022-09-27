@@ -30,8 +30,44 @@
             text-align: center;
             width: 50%;
             height: 100%;
-            img {
-                width: 100%;
+            .integrated-img{
+                width: 300px;
+                height: 100px;
+                margin: auto;
+                background-image: url('/img/1.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.5s ease all;
+            }
+            .integrated-img:hover{
+                background-image: url('/img/1hover.png');
+            }
+            .ecommerce-img{
+                width: 300px;
+                height: 100px;
+                margin: auto;
+                background-image: url('/img/2.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.5s ease all;
+            }
+            .ecommerce-img:hover{
+                background-image: url('/img/2hover.png');
+            }
+            .shipping-img{
+                width: 300px;
+                height: 100px;
+                margin: auto;
+                background-image: url('/img/3.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.5s ease all;
+            }
+            .shipping-img:hover{
+                background-image: url('/img/3hover.png');
             }
             .text-banner {
                 font-size: 35px;
@@ -246,7 +282,7 @@
         background-image: url('/img/texture.jpg');
         background-attachment: fixed;
         .container-about-us{
-            padding: 3rem;
+            padding: 5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -282,9 +318,48 @@
                 width: 17%;
                 height: 130px;
                 transition: 0.1s linear;
-                img {
-                    width: 30%;
-                    transition: 0.1s linear;
+                // img {
+                //     width: 30%;
+                //     transition: 0.1s linear;
+                // }
+                .integrated-img{
+                    width: 300px;
+                    height: 100px;
+                    margin: auto;
+                    background-image: url('/img/1.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transition: 0.5s ease all;
+                }
+                .integrated-img:hover{
+                    background-image: url('/img/1hover.png');
+                }
+                .ecommerce-img{
+                    width: 300px;
+                    height: 100px;
+                    margin: auto;
+                    background-image: url('/img/2.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transition: 0.5s ease all;
+                }
+                .ecommerce-img:hover{
+                    background-image: url('/img/2hover.png');
+                }
+                .shipping-img{
+                    width: 300px;
+                    height: 100px;
+                    margin: auto;
+                    background-image: url('/img/3.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transition: 0.5s ease all;
+                }
+                .shipping-img:hover{
+                    background-image: url('/img/3hover.png');
                 }
                 .text-banner {
                     font-size: 25px;
@@ -360,7 +435,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 text-align: left;
                 // img {
                 //     width: 100%;

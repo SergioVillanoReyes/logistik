@@ -25,7 +25,7 @@ const Shipping = () => {
     return (
         <Layout>
             <div className="integrated">
-                <p>
+                <p style={{marginBottom: '0rem'}}>
                     shipping
                 </p>
                 <div className="int-subtitle">
@@ -36,12 +36,12 @@ const Shipping = () => {
      you can focus on what really matters: growing 
      your business!
                 </div>
-                <br /><br />
                 <div className="int-subtitle">We work with different carriers and offer</div>
             </div>
             <div className="shipping">
                 {boxes.map((b, index) => (
                     <div key={index} className="box" style={{ flexDirection: b.flex}}>
+                        {/* <div className="arrows" style={{backgroundImage: `url('/img/${b.flex ? 'favicon' : 'arrowI'}.png')`}} /> */}
                         <p style={{ textAlign: b.flex === 'row-reverse' && 'right'}}>{b.title}</p>
                         <div className="img" style={{ backgroundImage: `url('${b.bg}')`}} />
                     </div>

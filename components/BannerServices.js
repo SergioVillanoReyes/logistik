@@ -5,21 +5,23 @@ import Link from "next/link";
 const BannerServices = () => {
     const services = [
         {
-            img: '1.png',
+            class: 'integrated-img',
             text: 'Integrated Distribution Services',
             route: '/integrated-distribution-services'
         },
         {
-            img: '2.png',
+            class: 'ecommerce-img',
             text: 'Ecommerce Integrations',
             route: '/ecommerce-integrations'
         },
         {
-            img: '3.png',
+            class: 'shipping-img',
             text: 'Shipping',
             route: '/shipping'
         }
     ];
+
+
     return (
         <>
         <div className="banner-services">
@@ -28,7 +30,8 @@ const BannerServices = () => {
                 <Link href={s.route} key={index}>
                     <a className="box-services">
                     <div>
-                        <img src={`/img/${s.img}`} alt="" />
+                        {/* <img src={`/img/${s.img}`} alt=""/> */}
+                        <div className={s.class}  />
                         <p className="text-banner">{s.text}</p>
                     </div>
                     </a>
