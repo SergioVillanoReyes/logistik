@@ -5,7 +5,7 @@ const AboutUs = () => {
     return (
         <>
     <div className="about-us">
-        <div className="container-about-us">
+        <div className="container-about-us"  id="aboutus">
             <p className="title">
                 ABOUT US
             </p>

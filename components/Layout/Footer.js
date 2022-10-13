@@ -38,8 +38,13 @@ const Footer = () => {
                             Get in touch
                             </p>
                                 <p className='text'>
-                                +1.323.916.4096<br/>
+                                <a href="tel:+13239164096">
+                                +1.323.916.4096
+                                </a>
+                                <br/>
+                                <a href="mailto:contact@logistik-solutions.com">
                                 contact@logistik-solutions.com 
+                                </a>
                                 </p>
                             </div>
                             <div className='contact-info'>
@@ -56,8 +61,10 @@ const Footer = () => {
                             Office Address
                             </p>
                                 <p className='text'>
+                                    <a target="_blank" href="https://goo.gl/maps/VbnYoXZze7ZDfaGm6" rel="noreferrer">
                                 5530 Bandini Blvd.<br/>
                                 Bell Gardens, CA 90201 
+                                    </a>
                                 </p>
                             </div>
                         </div>

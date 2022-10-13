@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import NavigationComponent from "../components/Navigation";
@@ -66,9 +67,13 @@ const IntegratedServices = () => {
                     <br />
                     We make sure that we inderstand your business goals and that we provide real-time solutions, so you can track your inventory every step of the way.
                     </p>
+                    <Link href="/#aboutus">
+                        <a>
                     <button className="btn btn-alternative">
                         See more
                     </button>
+                        </a>
+                    </Link>
                 </div>
                 <div className="int-boxes">
                     {texts.map((t, index)=> (

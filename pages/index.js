@@ -17,6 +17,7 @@ export default function Home() {
       />
       <AboutUs />
       <BannerServices />
+      <div id="technology"/>
       <Tech />
       <BannerBottom />
       <Contact />

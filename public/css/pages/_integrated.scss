@@ -17,7 +17,7 @@
         text-align: center;
         font-weight: 600;
         color: $primary-dark;
-        margin: 3rem;
+        margin: 5rem;
     }
 }
 .int-box{
@@ -82,7 +82,7 @@
         letter-spacing: 0;
         filter: blur(0);
         opacity: 1px;
-        margin-left: 3rem;
+        margin-left: 5rem;
     }
 }
 @keyframes fadeBottomO{
@@ -105,7 +105,7 @@
 }
 @media screen and (min-width: $breakpoint-md) {
 .integrated{
-    background-color: white;
+    background-color: inherit;
     margin-top: 2rem;
     padding: 0rem;
     display: flex;
@@ -115,7 +115,7 @@
     width: 100vw;
     height: 55vh;
     p{
-        font-size: 5vw;
+        font-size: 4vw;
         text-transform: uppercase;
         width: 50%;
         font-weight: 600;
@@ -125,11 +125,13 @@
         margin-top: 10rem;
     }
     .int-subtitle{
-        font-size: 1.8vw;
+        font-size: 1.2vw;
         width: 60%;
+        display: inline-block;
         text-align: left;
         color: black;
-        margin-left: 3rem;
+        margin-left: 5rem;
+        margin-top: 3vh;
         animation: fadeRightO 0.5s ease;
     }
 }
@@ -144,7 +146,7 @@
         display: flex;
         flex-direction: column;
         p{
-            font-size: 2vw;
+            font-size: 1.5vw;
             letter-spacing: 0px;
             line-height: 35px;
             margin-bottom: 3rem;
@@ -155,10 +157,12 @@
     .int-boxes{
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
         justify-items: center;
-        width: 55%;
+        width: 55vw;
+        margin-top: -37vh;
+        z-index: 1;
         .box{
             transition: 0.5s ease all;
             width: 85%;
@@ -179,13 +183,13 @@
                 background-repeat: no-repeat;
             }
             .title-int{
-                font-size: 2vw;
+                font-size: 1.2vw;
                 margin: 1rem 0rem;
                 color: $primary;
                 font-weight: bolder;
             }
             .text-int{
-                font-size: 19px;
+                font-size: 15px;
                 color: black;
             }
         }

@@ -39,7 +39,7 @@
     padding-top:10vh;
     .container-contact-form {
         background-color: white;
-        padding: 2rem;
+        padding: 8rem 2rem 2rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,15 +54,18 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 0rem;
-            width: 80%;
+            width: 60%;
             margin: auto;
         }
         .form-footer {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 1rem;
-            width: 80%;
+            width: 60%;
             margin: auto;
+            textarea{
+                resize: none;
+            }
             .form-send{
                 display: flex;
                 justify-content: flex-end;

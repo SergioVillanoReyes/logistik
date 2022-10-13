@@ -31,7 +31,8 @@ const Shipping = () => {
                 <div className="int-subtitle">
                  We know that shipping isn&#39;t just about
      moving products it&#39;s about managing risk and
-     maximizing efficiency.<br />With Logistik you&#39;ll get
+     maximizing efficiency.<br /><br />
+     With Logistik you&#39;ll get
      fast, reliable service at competitive proces so
      you can focus on what really matters: growing 
      your business!

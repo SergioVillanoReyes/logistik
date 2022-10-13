@@ -8,7 +8,12 @@ const Contact = () => (
     <div className="pre-footer" id="contact">
             <div className="column">
                 <div className="super-title">
-                <strong> Looking for solutions? <br /> Let&#39;s Talk. </strong>
+                <strong> Looking for solutions? 
+                 </strong>
+                    <br />
+                    <p>
+                    Let&#39;s Talk.
+                    </p>
                  </div>
                  <br />
                  {/* <div className="title">

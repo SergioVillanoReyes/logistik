@@ -39,7 +39,7 @@ const BannerServices = () => {
                 ))}
             </div>
         </div>
-        <div className="banner-bottom">
+        <div className="banner-bottom" >
                 <p className="text-banner-bottom">We help companies grow in the most unexpected ways</p>
         </div>
         </>
