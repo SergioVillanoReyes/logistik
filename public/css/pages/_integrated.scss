@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 100vw;
+    width: 90vw;
     height: 45vh;
     flex-wrap: wrap;
     text-align: center;
@@ -109,7 +109,7 @@
     margin-top: 2rem;
     padding: 0rem;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
     width: 100vw;
@@ -125,7 +125,7 @@
         margin-top: 10rem;
     }
     .int-subtitle{
-        font-size: 1.2vw;
+        font-size: 1.7vw;
         width: 60%;
         display: inline-block;
         text-align: left;

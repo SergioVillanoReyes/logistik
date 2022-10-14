@@ -35,9 +35,9 @@ const Shipping = () => {
      With Logistik you&#39;ll get
      fast, reliable service at competitive proces so
      you can focus on what really matters: growing 
-     your business!
+     your business!<br />
+     We work with different carriers and offer
                 </div>
-                <div className="int-subtitle">We work with different carriers and offer</div>
             </div>
             <div className="shipping">
                 {boxes.map((b, index) => (

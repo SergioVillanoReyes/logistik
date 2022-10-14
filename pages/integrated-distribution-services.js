@@ -49,7 +49,7 @@ const IntegratedServices = () => {
         {
             description: 'Targets timely prevention and monitoring of destructive pests during product arrival and storage.',
             title: 'Integrated Pest Management',
-            bg: '/img/24.png',
+            bg: '/img/init00.jpg',
         }
     ];
 
