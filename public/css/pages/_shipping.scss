@@ -36,7 +36,7 @@
     .box:hover{
         background-color: $primary-dark;
     }
-    .box:hover > .img{background-attachment:fixed; background-size: cover;}
+    // .box:hover > .img{background-attachment:fixed; background-size: cover;}
     .box:hover > p{ color: white; }
 }
 @media screen and (min-width: $breakpoint-md) {
@@ -59,6 +59,7 @@
             height: 30vh;
             background-size: 100%;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             cursor: pointer;
         }
         p{
