@@ -111,7 +111,7 @@
         }
     }
 }
-@media screen and (min-width: 1325px) {
+@media screen and (min-width: $breakpoint-md) {
     .menu {
         width: 100%;
         height: auto;

@@ -29,7 +29,7 @@ return (
                     </div>
             ):(
                  <>
-                        <p  style={{marginTop: '30vh'}}>
+                        <p  style={{marginTop: '20vh'}}>
                                 SOLUTIONS 
                                 <span className="center-flex">
                                 <small>WITH</small>

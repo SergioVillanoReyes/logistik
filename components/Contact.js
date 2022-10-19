@@ -20,7 +20,7 @@ const Contact = () => (
                  Let us distribute it for you  
                  </div> */}
                  <hr style={{marginTop: '50px'}}/>
-                 <div style={{ display: 'flex', justifyContent: 'end', marginTop: '20px', marginBottom: '2rem' }}>
+                 <div className="pre-btn" style={{ display: 'flex', justifyContent: 'end', marginTop: '20px', marginBottom: '2rem' }}>
                  <Link href="/contact"><a><Button typeOfBtn="primary" text="CONTACT US" /></a></Link>
                  </div>
             </div>

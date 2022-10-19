@@ -70,6 +70,14 @@ const Footer = () => {
                         </div>
                 </div>
             </div>
+            <div className='credits'>
+                <p>
+            2022, Created by Uniq
+                </p>
+                <p>
+            All rights reserved
+                </p>
+            </div>
         </div>
     );
 };

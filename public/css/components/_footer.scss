@@ -54,6 +54,16 @@
             }
         }
     }
+    .credits{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 100;
+        padding: 15px 0px;
+    }
 }
 
 @media screen and (min-width: $breakpoint-md) {
