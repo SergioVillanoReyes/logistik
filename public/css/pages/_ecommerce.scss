@@ -87,17 +87,17 @@
         margin-top: -45vh;
         z-index: 1;
         .circle{
-            padding: 2rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 65%;
-            height: 30vh;
+            height: 25vh;
             cursor: pointer;
             .circle-img{
                 transition:0.5s ease all;
                 width: 100%;
-                height: 200px;
+                height: 120px;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -114,3 +114,68 @@
     }
 }
 }
+
+@media screen and (min-width: $breakpoint-mdx) {
+    .ecommerce-int{
+        padding: 50vh 3rem 3rem 5rem;
+        display: flex;
+        background-color: white;
+        flex-direction: row;
+        .ecomm-texts{
+            display: flex;
+            flex-direction: column;
+            width: 55vw;
+            .ecomm-text{
+                font-size: 2vw;
+                letter-spacing: 0px;
+                margin-bottom: 3rem;
+                text-align: left;
+                animation: fadeBottomO 1s ease;
+            }
+            .ecomm-title{
+                font-size: 2.4vw;
+                width: 100%;
+                font-weight: 600;
+                text-align: left;
+                color: $primary-dark;
+                animation: fadeBottomO 2s ease;
+    
+            }
+        }
+        .ecomm-circles{
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0rem;
+            align-self: center;
+            justify-items: center;
+            margin-top: -45vh;
+            z-index: 1;
+            .circle{
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 65%;
+                height: 30vh;
+                cursor: pointer;
+                .circle-img{
+                    transition:0.5s ease all;
+                    width: 100%;
+                    height: 200px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .circle-text{
+                    font-size: 1vw;
+                    letter-spacing: 0px;
+                    line-height: inherit;
+                    margin-bottom: 0rem;
+                    text-align: center; 
+                }
+            }
+            .circle:hover > .circle-img{ filter: grayscale(100%);  }
+        }
+    }
+    }

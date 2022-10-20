@@ -126,7 +126,119 @@
             .left-panel{
                 display: flex;
                 flex-direction: row;
-                width: auto;
+                width: 70%;
+                justify-content: flex-start;
+                .logo{
+                    width: 180px;
+                    transition: 0.2s ease-in;
+                    img{
+                        width: 170px;
+                        margin-top: 10px;
+                    }
+                }
+                .logo-min{
+                    width: 100px;
+                    transition: 0.2s ease-in;
+                    img{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                .hamburger-menu{
+                    display: none;
+                }
+                .show{
+                    display: flex !important;
+                }
+                .hide{
+                    display: flex !important;
+                }
+                .sections{
+                    position: inherit;
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;
+                    margin-top: 0;
+                    background: inherit;
+                    color: white;
+                    align-items: center;
+                    padding: 0rem;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .section{
+                        padding: 0rem 1rem; 
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border-bottom: none;
+                        transition:none;
+                        &:hover{
+                            border-bottom: 1px solid white;
+                        }
+                        .dropdown {
+                            width: auto !important;
+                            padding: 1rem 0rem 1rem 0rem;
+                            position: absolute;
+                            background: black;
+                            animation: drop 0.5s ease;
+                            .sub-section {
+                                padding: 1rem 2rem 1rem 1rem;
+                                background: black;
+                                transition: none;
+                            }
+                            .sub-section:hover {
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                    .active {
+                        border-bottom: 3px solid white;
+                    }
+                }
+            }
+            .button-right{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0rem;
+                width: 30%;
+            }
+        }
+    }
+    .menu-up{
+        background: none;
+        position: absolute;
+        transition: 0.2s ease-in;
+    }
+    .menu-down{
+        background-color: $primary-dark;
+        position: fixed;
+        transition: 0.2s ease-in;
+    }
+    .bg-menu{
+        background-color: $primary-dark;
+    }
+}
+
+@media screen and (min-width: $breakpoint-mdx) {
+    .menu {
+        width: 100%;
+        height: auto;
+        z-index: 4;
+        .container-menu{
+            padding: 1rem 3rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .left-panel{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 70%;
                 .logo{
                     width: 250px;
                     transition: 0.2s ease-in;
@@ -202,6 +314,7 @@
                 align-items: center;
                 justify-content: flex-end;
                 padding: 0rem;
+                width: 20%;
             }
         }
     }

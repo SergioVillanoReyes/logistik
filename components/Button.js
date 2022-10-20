@@ -6,7 +6,8 @@ const Button = ({
     text,
     typeOfBtn,
     type = 'button',
-    icon = ""
+    icon = "",
+    onClick,
 }) => {
 
     return (
@@ -14,6 +15,7 @@ const Button = ({
         <button
         type={type}
         className={`btn btn-${typeOfBtn}`}
+        onClick={onClick}
         >
             {icon !== "" && (
                 <img src={`/img/${icon}.png`} alt='icon' />

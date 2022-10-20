@@ -65,3 +65,72 @@
     box-shadow: 0px 0px 5px gray;
     border: 3px solid white;
   }
+  @media screen and (min-width: $breakpoint-mds) {
+    .btn{
+      padding: .3rem 1rem;
+      border: none;
+      font-size: 18px;
+      font-family: $font-family;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+          img{
+              width: 30px;
+          }
+  }
+  .btn-primary{
+      background-color: $primary;
+      color: white;
+      border-radius: 15px;
+      border: 4px solid white;
+  }
+  .btn-secondary{
+      background-color: white;
+      color: $primary;
+      border-radius: 15px;
+      box-shadow: 0px 0px 5px gray;
+      border: 3px solid $primary;
+  }
+  .btn-close {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px gray;
+    }
+    .btn-close::after {
+      content: " ";
+      position: absolute;
+      display: block;
+      background-color: $primary;
+      height: 5px;
+      margin-top: -4px;
+      top: 50%;
+      left: 5px;
+      right: 5px;
+      z-index: 9;
+    }
+    .btn-close::before {
+      content: " ";
+      position: absolute;
+      display: block;
+      background-color: $primary;
+      width: 5px;
+      margin-left: -1px;
+      left: 44%;
+      top: 4px;
+      bottom: 7px;
+      z-index: 9;
+    }
+    .btn-alternative{
+      width: 50%;
+      margin-left: 25%;
+      background-color: $primary-dark;
+      color: white;
+      border-radius: 2px;
+      box-shadow: 0px 0px 5px gray;
+      border: 3px solid white;
+    }
+  }

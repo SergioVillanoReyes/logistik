@@ -4,6 +4,9 @@ const Input = ({
     label,
     className,
     placeholder,
+    onChange,
+    name,
+    value,
 }) => {
 
     return (
@@ -13,6 +16,9 @@ const Input = ({
                 <input
                   className={`${className || 'input'}`}
                   placeholder={placeholder}
+                  name={name}
+                  onChange={onChange}
+                  value={value}
                 />
             </label>
         </div>

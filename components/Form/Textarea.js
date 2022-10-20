@@ -4,6 +4,9 @@ const Textarea = ({
     label,
     className,
     placeholder,
+    onChange,
+    name,
+    value,
 }) => {
 
     return (
@@ -14,6 +17,9 @@ const Textarea = ({
                     className={`${className || 'input'}`}
                     placeholder={placeholder}
                     rows={6}
+                    name={name}
+                    onChange={onChange}
+                    value={value}
                 >
                 </textarea>
             </label>
